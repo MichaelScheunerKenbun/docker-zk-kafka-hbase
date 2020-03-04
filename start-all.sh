@@ -1,6 +1,6 @@
 #!/bin/bash -eu
 
-SHOULD_BUILD=$(docker images | grep -c 'lee51/hbase' || echo)
+SHOULD_BUILD=$(docker images | grep -c 'kenbun/hbase' || echo)
 if [[ $SHOULD_BUILD -lt 1 ]]; then
   docker-compose build
 fi

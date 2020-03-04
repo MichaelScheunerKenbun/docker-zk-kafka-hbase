@@ -23,7 +23,7 @@ services:
 
   hbase:
     build: ./hbase
-    image: lee51/hbase
+    image: kenbun/hbase
     container_name: hbase
     hostname: ${HOSTNAME}
     depends_on:
